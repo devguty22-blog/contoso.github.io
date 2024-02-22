@@ -20,7 +20,70 @@
         style="display: block; margin: auto;"/>
         <figcaption>Fig 1</figcaption>
       </figure>
+      <h2>Sources</h2>
+        <p>
+          Se identifica dos origenes de datos, el primero de una base de datos on-premise SQL server y el segundo
+          de un sharepoint.
+        </p>
+        <p>
+          Se desea llevar datos de tablas de SQL server a un data lake en AWS S3 y archivos de sharepoint.
+        </p>
+        <p>
+          Esto es infraestructura del cliente
+        </p>
+      <h2>Extraction</h2>
+        <P>
+          Para realizar la extraccion de datos de SQL Server se debe establecer las reglas de firewall con los VPC publicos
+          de AWS con la finalizar de poder tener un tunel de conexion a este servidor On-premise.
+        </P>
+        <p>
+          Para realizar la extraccion de archivos de sharepoint se debe establecer los permisos de conexion con el API de
+          sharepoint.
+        </P>
+        <p>
+          Esto se realiza en conjunto con el equipo de seguridad y el equipo de desarrollo.
+        </p>
+      <h2>ETL</h2>
+        <p>
+          En la primera primera capa llegaran datos
+          crudos y en la segunda capa se realizaran las transformaciones necesarias para el modelamiento de datos.
+        </p>
+        <p>
+          En la tercera capa se realizaran las transformaciones necesarias para el analisis de datos, esto en coordinacion
+          con el negocio.
+        </p>
+        <p>
+          Esto se hace en coordinacion con los stakeholders
+        </p>
+      <h2>ML</h2>
+        <p>
+          Se realizara el entrenamiento, validacion y despliegue de modelos de machine learning.
+        </p>
+        <p>
+          Esto se hace en coordinacion con los stakeholders
+        </p>
+      <h2>FrontEnd</h2>
+        <p>
+          Se realizara el desarrollo de dashboards y reportes.
+        </p>
+        <p>
+          Esto se hace en coordinacion con los stakeholders
+        </p>
+      <h2>CI/CD</h2>
+        <p>
+          Se realizara el despliegue de la solucion en un ambiente de desarrollo, pruebas y produccion.
+        </p>
+      <h2>Orchestation</h2>
+        <p>
+          Se realizaran los cronogramas de ejecucion de los procesos de ETL, ML y FrontEnd.
+        </p>
       <li><h2>Roles</h2></li>
+        <ul>
+          <li>Delivery Manager (01)</li>
+          <li>Data Engineer (02)</li>
+          <li>ML Engineer (01)</li>
+          <li>FrontEnd Engineer (01)(opcional)</li>
+        </ul>
       <li><h2>Tiempos e Hitos</h2></li>
       <li><h2>Justificacion</h2></li>
       <li><h2>Entregables</h2></li>
